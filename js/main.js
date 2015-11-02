@@ -3,8 +3,8 @@ function setup(){
 
 var cnv = createCanvas(windowWidth,windowHeight);
     cnv.parent('pattern');
- var x = 40;
- var y = 40;
+ var x = 0;
+ var y = 0;
  var gridWidth = 1000;
 for(var i = 0; i<100; i++){
 
@@ -15,19 +15,22 @@ for(var i = 0; i<100; i++){
     //check if x is past the grid width
     if(x > gridWidth){
     //set x back to the beginning
-        x=40;
+        x=0;
         //move y down
         y+=300;
-    }//end for loop
+    }end if
 
-}//end for set up
+}//end for loop
 
-}
+}//end for setup
 
-function drawing(startX, startY){
+function draw(){
+
+ function drawPattern(startX, startY){
 
     triangle(0,30,40,0,40,30);
 
 
 
+}
 }
